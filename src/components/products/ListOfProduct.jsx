@@ -2,7 +2,7 @@ const ListOfProduct = ({products}) => {
    return (
       <div>
          {products.map(product => (
-            <div>
+            <div key={product.id}>
                <img src={product.img} alt={product.id+product.name} />
                <h3>{product.name}</h3>
                <p>{product.description}</p>
