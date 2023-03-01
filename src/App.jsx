@@ -3,7 +3,7 @@ import { Header } from './components/Header';
 import { Product } from './components/products/Product';
 import { Welcome } from './components/Welcome';
 import { We } from './components/We';
-import { Contact } from './components/Contact';
+import { Contact } from './components/Contact/Contact';
 function App() {
 
   return (
