@@ -6,7 +6,7 @@ import { Form } from "./Form";
 const Contact = () => {
    const [openModal, setOpenModal] = useState(false);
    return (
-      <div>
+      <div id="Contact">
          <h2>Contact</h2>
          <div>
             <p>Tel: +54 2323-2312</p>
