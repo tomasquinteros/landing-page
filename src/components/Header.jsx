@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Header = () => {
    const styleNav = "py-8 flex justify-around fixed items-center transition duration-1000 all z-40 top-0 left-0 min-w-full";
@@ -20,11 +20,11 @@ const Header = () => {
          <nav 
             className={navBar ? active : navBarStay}
          >
-         <NavLink to="/" className="text-3xl">Tecnologies Store</NavLink>
+         <Link to="#" className="text-3xl">Tecnologies Store</Link>
          <div className="flex gap-10 ">
-            <NavLink to="/" className="text-xl text-cyan-300 hover:text-neutral-200">We</NavLink>
-            <NavLink to="/" className="text-xl text-cyan-300 hover:text-neutral-200">Product</NavLink>
-            <NavLink to="/" className="text-xl text-cyan-300 hover:text-neutral-200">Contact</NavLink>
+            <Link to="#We" className="text-xl text-cyan-300 hover:text-neutral-200">We</Link>
+            <Link to="#product" className="text-xl text-cyan-300 hover:text-neutral-200">Product</Link>
+            <Link to="#Contact" className="text-xl text-cyan-300 hover:text-neutral-200">Contact</Link>
             </div>
          </nav>
       </div>
