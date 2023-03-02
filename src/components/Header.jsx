@@ -2,7 +2,7 @@ import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 
 const Header = () => {
-   const styleNav = "py-8 flex justify-around fixed items-center transition duration-1000 all z-40 top-0 left-0 min-w-full";
+   const styleNav = "py-8 flex justify-around fixed items-center transition duration-300 all z-40 top-0 left-0 min-w-full";
    const active = styleNav + " bg-black";
    const navBarStay = styleNav + " bg-transparent"; 
    const [navBar, setNavBar] = useState(false);
