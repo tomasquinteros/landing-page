@@ -2,37 +2,44 @@
    {
       "id": 1,
       "name": "RTX 4090",
-      "image":"",
-      "link": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/"    
+      "image":"src/assets/product/geforce-rtx-4090-product.png",
+      "link": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/",
+      "info": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum omnis."
    },
    {
       "id": 2,
       "name": "RX 6700XT",
-      "image":"",
-      "link": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6700-xt" 
+      "image":"src/assets/product/rx-6700-xt-product.png",
+      "link": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6700-xt" ,
+      "info": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum omnis."
+      
    },
    {
       "id": 3,
       "name": "Intel i9 13th Gen",
-      "image":"",
-      "link": "https://www.intel.com/content/www/us/en/products/docs/processors/core/13th-gen-core-desktop-brief.html" 
+      "image":"src/assets/product/intel-i9-product.png",
+      "link": "https://www.intel.com/content/www/us/en/products/docs/processors/core/13th-gen-core-desktop-brief.html",
+      "info": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum omnis." 
    },
    {
       "id": 4,
       "name": "Ryzen 5 7600x",
-      "image":"",
-      "link": "https://www.amd.com/en/products/cpu/amd-ryzen-5-7600x" 
+      "image":"src/assets/product/ryzen-5-product.webp",
+      "link": "https://www.amd.com/en/products/cpu/amd-ryzen-5-7600x" ,
+      "info": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum omnis."
    },
    {
       "id": 5,
-      "name": "HyperX Alloy Origins",
-      "image":"",
-      "link": "https://row.hyperx.com/collections/gaming-keyboards/products/hyperx-alloy-origins-mechanical-gaming-keyboard?loc=ROW&variant=40855556882637" 
+      "name": "Headset Logitech G Pro X",
+      "image":"src/assets/product/logitech-g-pro-product.png",
+      "link": "https://www.logitechg.com/en-us/products/gaming-audio/pro-gaming-headset-passive-noise-cancellation.981-000811.html" ,
+      "info": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum omnis."
    }, 
    {
       "id": 6,
       "name": "HyperX Alloy Origins",
-      "image":"",
-      "link": "https://row.hyperx.com/collections/gaming-keyboards/products/hyperx-alloy-origins-mechanical-gaming-keyboard?loc=ROW&variant=40855556882637" 
+      "image":"src/assets/product/hyperx-alloy-product.webp",
+      "link": "https://row.hyperx.com/collections/gaming-keyboards/products/hyperx-alloy-origins-mechanical-gaming-keyboard?loc=ROW&variant=40855556882637" ,
+      "info": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus ipsum omnis."
    }
 ]
