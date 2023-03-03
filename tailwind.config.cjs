@@ -5,7 +5,10 @@ module.exports = {
     "./src/**/*.jsx"
   ],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateRows: {
+          '5': 'repeat(5, minmax(-10px, 1fr))',
+    }
   },
   plugins: [],
-}
+}}
