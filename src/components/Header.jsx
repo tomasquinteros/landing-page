@@ -1,35 +1,43 @@
 import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import { FaBars, FaTimes } from 'react-icons/fa';
+import { stylesNavBar } from "../data/styles";
 
 const Header = () => {
-   const styleNav = "py-8 flex justify-around fixed items-center transition duration-300 all z-40 top-0 left-0 min-w-full";
-   const active = styleNav + " bg-black";
-   const navBarStay = styleNav + " bg-transparent"; 
+
    const [navBar, setNavBar] = useState(false);
+   const [open, setOpen] = useState(false)
    const changeBg = () => {
       if (window.scrollY > 180) {
          setNavBar(true);
-      }else {
+      } else {
          setNavBar(false)
       }
    }
    window.addEventListener("scroll", changeBg);
-
    return (
-      <div className="mb-32">
-         <nav 
-            className={navBar ? active : navBarStay}
+      <div className="mb-32 md:mb-64">
+         <nav
+            className={navBar ? `${stylesNavBar.styleNav} ${stylesNavBar.active}` : ` ${stylesNavBar.styleNav} ${stylesNavBar.navBarStay}`}
          >
-         <Link to="#" className="text-3xl">Tecnologies Store</Link>
-         <div className="flex gap-10 ">
-            <Link to="#We" className="text-xl text-cyan-300 hover:text-neutral-200">We</Link>
-            <Link to="#product" className="text-xl text-cyan-300 hover:text-neutral-200">Product</Link>
-            <Link to="#Contact" className="text-xl text-cyan-300 hover:text-neutral-200">Contact</Link>
+            <Link to="#" className="text-2xl md:text-4xl font-medium">Tecnologies Store</Link>
+
+            <div className={open ? stylesNavBar.openNav : stylesNavBar.close}>
+               <div className="top-10 right-10 fixed">
+                  <button className="lg:hidden text-4xl" onClick={() => setOpen(false)}>
+                     <FaTimes />
+                  </button>
+               </div>
+               <Link onClick={() => setOpen(false)} to="#product" className={stylesNavBar.styleLinks}>Product</Link>
+               <Link onClick={() => setOpen(false)} to="#We" className={stylesNavBar.styleLinks}>We</Link>
+               <Link onClick={() => setOpen(false)} to="#Contact" className={stylesNavBar.styleLinks}>Contact</Link>
             </div>
+            <button className="lg:hidden text-2xl" onClick={() => setOpen(true)}>
+               <FaBars />
+            </button>
          </nav>
       </div>
    )
-
 }
 
-export {Header}
+export { Header }
