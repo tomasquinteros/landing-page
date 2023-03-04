@@ -7,7 +7,6 @@ import { motion } from "framer-motion"
 const Form = () => {
    const { register, reset, handleSubmit, formState: { errors } } = useForm();
    const [send, setSend] = useState(false)
-
    function completed() {
       if (errors.Name?.message || errors.Email?.message || errors.textArea?.message) {
          if (send) {
@@ -27,8 +26,9 @@ const Form = () => {
             Email: null,
             textArea: null
          })
-
+   
    }
+
    return (
       <div className="w-5/6">
          <div>

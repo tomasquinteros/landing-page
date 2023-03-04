@@ -1,7 +1,9 @@
 import { ListOfProduct } from "./ListOfProduct";
 import products from "../../data/product.json"
-
+import { useLocation } from 'react-router-dom';
 const Product = () => {
+   console.log(useLocation())
+
    return (
       <section id="product" className="flex flex-col items-center justify-center gap-8 mt-16 min-h-screen w-3/4 mb-12 lg:mb-0">
          <h2 className="text-6xl">Our Products</h2>

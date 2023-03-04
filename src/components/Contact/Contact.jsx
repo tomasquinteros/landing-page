@@ -13,12 +13,18 @@ const Contact = () => {
          <div className="flex flex-col md:flex-row items-center justify-between gap-20 p-8">
             <FastContact/>
             <div className="flex flex-col gap-4">
-               <button className="btn bg-slate-800 p-6 rounded-md hover:scale-125 transition-all shadow-2xl" onClick={() => { setOpenModal(!openModal) }}>Send Messege</button>
+               <button 
+                  className="btn bg-slate-800 p-6 rounded-md hover:scale-125 transition-all shadow-2xl"
+                  onClick={() => { setOpenModal(!openModal) }}
+               >
+                  Send Messege
+               </button>
             </div>
          </div>
          {openModal ?
             <div className="z-40 bg-black/95 fixed top-0 left-0 w-screen h-screen flex justify-center items-center">
-               <motion.div className="flex flex-col items-center justify-between bg-blue-700 p-2 rounded-sm shadow-2xl w-3/4 lg:w-auto md:full"
+               <motion.div 
+                  className="flex flex-col items-center justify-between bg-blue-700 p-2 rounded-sm shadow-2xl w-3/4 lg:w-auto md:full"
                   initial={{ scale: 0 }}
                   animate={{ rotate: 0, scale: 1 }}
                   transition={{ type: "spring" }}>
