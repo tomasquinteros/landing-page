@@ -11,7 +11,7 @@ const Welcome = () => {
             animate={{ rotate: 0, scale: 1 }}
             transition={{ type: "spring" }}
          >Welcome to <br />
-            <strong className="text-cyan-500 md:text-8xl lg:text-9xl">Tecnologies <br />Store</strong>
+            <strong className="text-cyan-500 md:text-8xl lg:text-9xl">Technology <br />Store</strong>
          </motion.h1>
          <div className="flex flex-col xl:flex-row gap-32">
             <div className="flex flex-col justify-around gap-8">
