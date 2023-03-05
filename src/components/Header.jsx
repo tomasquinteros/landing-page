@@ -20,7 +20,7 @@ const Header = () => {
          <nav
             className={navBar ? `${stylesNavBar.styleNav} ${stylesNavBar.active}` : ` ${stylesNavBar.styleNav} ${stylesNavBar.navBarStay}`}
          >
-            <Link to="#" className="text-2xl md:text-4xl font-medium">Tecnologies Store</Link>
+            <Link to="#" className="text-2xl md:text-4xl font-medium">Technology Store</Link>
 
             <div className={open ? stylesNavBar.openNav : stylesNavBar.close}>
                <div className="top-10 right-10 fixed">
