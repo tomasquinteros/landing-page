@@ -28,7 +28,7 @@ const Header = () => {
                      <FaTimes />
                   </button>
                </div>
-               <Link onClick={() => setOpen(false)} to="#product" className={stylesNavBar.styleLinks}>Product</Link>
+               <Link onClick={() => setOpen(false)} to="#Product" className={stylesNavBar.styleLinks}>Product</Link>
                <Link onClick={() => setOpen(false)} to="#We" className={stylesNavBar.styleLinks}>We</Link>
                <Link onClick={() => setOpen(false)} to="#Contact" className={stylesNavBar.styleLinks}>Contact</Link>
             </div>
