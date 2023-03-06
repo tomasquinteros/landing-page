@@ -4,7 +4,7 @@ const stylesNavBar = {
    navBarStay: "bg-transparent",
    close: "hidden lg:flex justift-center items-center  lg:gap-20",
    openNav: "flex flex-col justify-center items-center gap-20 bg-black  fixed top-0 left-0 w-full h-full",
-   styleLinks: "lg:text-xl text-4xl  text-cyan-300 font-medium hover:text-neutral-200"
+   styleLinks: "lg:text-xl text-4xl  text-green-400 font-medium hover:text-neutral-200"
 }
 
 const waveTop = <svg className="" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1D4ED8" fillOpacity="1" d="M0,288L48,261.3C96,235,192,181,288,170.7C384,160,480,192,576,208C672,224,768,224,864,197.3C960,171,1056,117,1152,106.7C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>

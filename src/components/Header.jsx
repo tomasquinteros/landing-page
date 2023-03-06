@@ -2,6 +2,7 @@ import { useState } from "react";
 import { HashLink as Link } from "react-router-hash-link";
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { stylesNavBar } from "../data/styles";
+import GoToTop from "./goToTop";
 
 const Header = () => {
 
@@ -20,8 +21,7 @@ const Header = () => {
          <nav
             className={navBar ? `${stylesNavBar.styleNav} ${stylesNavBar.active}` : ` ${stylesNavBar.styleNav} ${stylesNavBar.navBarStay}`}
          >
-            <Link to="#" className="text-2xl md:text-4xl font-medium">Technology Store</Link>
-
+            <a href='/' className="text-2xl md:text-4xl font-medium text-indigo-700">Technology Store</a>
             <div className={open ? stylesNavBar.openNav : stylesNavBar.close}>
                <div className="top-10 right-10 fixed">
                   <button className="lg:hidden text-4xl" onClick={() => setOpen(false)}>

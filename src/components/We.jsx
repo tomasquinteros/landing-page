@@ -7,7 +7,7 @@ const We = () => {
             <p>We have been in the industry since 2020 offering our products</p>
          </div>
          <div className="flex flex-col gap-3">
-            <h2 className="text-2xl">What do we aspire to?</h2>
+            <h2 className="text-2xl text-indigo-600">What do we aspire to?</h2>
             <div className="flex items-center justify-between gap-4">
                <p className="text-md  md:text-xl font-extralight">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit accusamus in dolor. Mollitia quidem distinctio ex autem quisquam provident illo numquam molestias? Minima, sapiente porro. Adipisci dolores debitis nihil voluptates.
                   Rerum debitis provident fugit optio accusantium laboriosam nemo odio ducimus dolor cupiditate at explicabo, labore praesentium expedita necessitatibus quibusdam quis perferendis exercitationem. Expedita ex corrupti deleniti? Tempore blanditiis cupiditate sapiente?
