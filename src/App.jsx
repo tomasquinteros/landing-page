@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Routes>
         <Route path='/' element={<LandingPage />} />
-        <Route path='*' element={<Error404 />} />
+        <Route path='/*' element={<Error404 />} />
       </Routes>
     </BrowserRouter>
   )
