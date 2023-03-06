@@ -33,11 +33,11 @@ const Form = () => {
       <div className="w-5/6">
          <div>
             <form id="form" onSubmit={handleSubmit((data) => console.log(data))} className="md:p-4">
-               <p className={!completed() ? "text-red-600 p-2" : "text-white p-2"}>Complete form for send email.</p>
+               <p className={!completed() ? "text-red-600 p-2 relative" : "text-white p-2"}>Complete form for send email.</p>
                <ul className="flex flex-col gap-1 md:gap-4">
                   <li className="flex flex-col md:gap-1 w-full">
                      <label className="text-lg text-gray-300 font-medium">Name</label>
-                     <input className="bg-transparent border p-2 text-white" type="text"
+                     <input className="bg-transparent border rounded-lg p-2 text-white" type="text"
                         {...register("Name",
                            {
                               required: "Name is required",
@@ -50,7 +50,7 @@ const Form = () => {
                   </li>
                   <li className="flex flex-col gap-1 w-full">
                      <label className="text-lg text-gray-300 font-medium">Email</label>
-                     <input className="bg-transparent border p-2 text-white" type="email"
+                     <input className="bg-transparent border rounded-lg p-2 text-white" type="email"
 
                         {...register("Email",
                            {
@@ -67,7 +67,7 @@ const Form = () => {
                   </li>
                   <li className="flex flex-col gap-1 w-full">
                      <label className="text-lg text-gray-300 font-medium">Message</label>
-                     <textarea cols="30" rows="10" className="resize-none bg-cyan-400/25"
+                     <textarea cols="30" rows="10" className="resize-none bg-cyan-400/25 rounded-lg"
                         {...register("textArea",
                            {
                               required: "Message is required",
@@ -79,7 +79,7 @@ const Form = () => {
                      <span className="text-red-600 font-light">{errors.textArea?.message}</span>
                   </li>
                </ul>
-               <input className="bg-cyan-600 border border-cyan-200 rounded-md font-bold p-2 text-white hover:scale-110 transition-all" type="submit" onClick={() => { setSend(true) }} />
+               <input className="bg-cyan-600 border border-cyan-200 rounded-md font-bold p-2 mt-2 text-white hover:scale-110 transition-all" type="submit" value="Send" onClick={() => { setSend(true) }} />
             </form>
          </div>
          {send & completed() ?

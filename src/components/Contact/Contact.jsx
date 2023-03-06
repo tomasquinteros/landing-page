@@ -12,7 +12,7 @@ const Contact = () => {
          {waveTop}
          <div className='flex flex-col items-center bg-blue-700'>
             <div id="Contact" className="flex flex-col gap-5 w-3/4 mb-12">
-               <h2 className="text-4xl md:text-6xl font-medium text-white border-b p-8">Contact</h2>
+               <h2 className="text-4xl md:text-6xl font-medium text-indigo-200 border-b p-8">Contact</h2>
                <div className="flex flex-col md:flex-row items-center justify-between gap-20 p-8">
                   <FastContact/>
                   <div className="flex flex-col gap-4">
@@ -27,7 +27,7 @@ const Contact = () => {
                {openModal ?
                   <div className="z-40 bg-black/95 fixed top-0 left-0 w-screen h-screen flex justify-center items-center">
                      <motion.div 
-                        className="flex flex-col items-center justify-between bg-blue-700 p-2 rounded-sm shadow-2xl w-3/4 lg:w-auto md:full"
+                        className="flex flex-col items-center justify-between bg-blue-700 shadow-2xl shadow-gray-900 p-2 rounded-lg w-3/4 lg:w-auto md:full"
                         initial={{ scale: 0 }}
                         animate={{ rotate: 0, scale: 1 }}
                         transition={{ type: "spring" }}>
