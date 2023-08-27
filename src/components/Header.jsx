@@ -29,7 +29,7 @@ const Header = () => {
                   </button>
                </div>
                <Link onClick={() => setOpen(false)} to="#Product" className={stylesNavBar.styleLinks}>PRODUCT</Link>
-               <Link onClick={() => setOpen(false)} to="#We" className={stylesNavBar.styleLinks}>WE</Link>
+               <Link onClick={() => setOpen(false)} to="#We" className={stylesNavBar.styleLinks}>ABOUT US</Link>
                <Link onClick={() => setOpen(false)} to="#Contact" className={stylesNavBar.styleLinks}>CONTACT</Link>
             </div>
             <button className="lg:hidden text-2xl" onClick={() => setOpen(true)}>
